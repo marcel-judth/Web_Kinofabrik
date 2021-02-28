@@ -1,0 +1,44 @@
+@import './home';
+@import './trailer';
+@import './themes';
+@import './contact';
+
+@font-face {
+  font-family: 'Billionaire';
+  src: URL('../fonts/BillionaireMediumGrunge.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-size: 62.5%;
+  font-family: 'montserrat', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  color: white;
+}
+
+h2 {
+  font-family: Billionaire, sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinofabrik</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="home">
+      <div class="nav-mobile">
+        <div class="burger">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </div>
+      <img
+        id="logo"
+        src="./img/Logo_Kinofabrik_weiß-transparent.png"
+        alt="logo Kinofabrik"
+      />
+      <img
+        class="buy-tickets-img"
+        src="./img/Hier Tickets kaufen.png"
+        alt="buy tickets image"
+      />
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#kinofabrik">KINOFABRIK</a></li>
+          <li><a href="#themenbereiche">THEMENBEREICHE</a></li>
+          <li><a href="#fabrikanten">FABRIKANTEN</a></li>
+          <li><a href="#veranstaltungen">VERANSTALTUNGEN</a></li>
+          <li><a href="#kontakt">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="kinofabrik" class="trailer">
+      <h2>Kinofabrik Trailer</h2>
+      <video id="trailerVideo" controls>
+        <source src="./videos/trailer-kinofabrik.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section id="themenbereiche" class="themes">
+      <h2>Themenbereiche</h2>
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="border-left"></div>
+          <div class="border-bottom"></div>
+          <div class="card-images">
+            <img
+              class="card-main-img"
+              src="./img/Geburtstag.jpg"
+              alt="Kindergeburtstag"
+            />
+            <img
+              class="card-overlay-img"
+              src="./img/Geburtstag-im-Kino-LOGO.png"
+              alt="logo
+                Kindergeburtstag"
+            />
+            <div class="card-main-img-overlay"></div>
+          </div>
+          <div class="hide">
+            <h3>GEBURTSTAG IM KINO</h3>
+          </div>
+          <div class="hide card-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure
+              sit, ab vel dolorem expedita veniam accusantium inventore
+              voluptatem obcaecati!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="border-left"></div>
+          <div class="border-bottom"></div>
+          <div class="card-images">
+            <img
+              class="card-main-img"
+              src="./img/Kunst.jpg"
+              alt="Kindergeburtstag"
+            />
+            <img
+              class="card-overlay-img"
+              src="./img/Kunst-im-Kino-LOGO.png"
+              alt="logo
+                Kunst"
+            />
+            <div class="card-main-img-overlay"></div>
+          </div>
+          <div class="hide">
+            <h3>GEBURTSTAG IM KINO</h3>
+          </div>
+          <div class="hide card-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure
+              sit, ab vel dolorem expedita veniam accusantium inventore
+              voluptatem obcaecati!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="border-left"></div>
+          <div class="border-bottom"></div>
+          <div class="card-images">
+            <img
+              class="card-main-img"
+              src="./img/kasperlimkino.jpg"
+              alt="Kindergeburtstag"
+            />
+            <img
+              class="card-overlay-img"
+              src="./img/Kasperl-im-Kino-LOGO.png"
+              alt="logo
+                Kindergeburtstag"
+            />
+            <div class="card-main-img-overlay"></div>
+          </div>
+          <div class="hide">
+            <h3>GEBURTSTAG IM KINO</h3>
+          </div>
+          <div class="hide card-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iure
+              sit, ab vel dolorem expedita veniam accusantium inventore
+              voluptatem obcaecati!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Kontakt</h2>
+          <h4>KINOFABRIK</h4>
+          <h3>FIVE ELEMENTS FILMS</h3>
+          <h3>media productions GmbH</h3>
+          <h3>Villacher Straße 95</h3>
+          <h3>9800 Spittal an der Drau</h3>
+          <br />
+          <a>+43 664 14 28 953</a>
+        </div>
+        <div class="contact-form">
+          <span>NAME</span>
+          <input type="text" />
+          <span>E-MAIL</span>
+          <input type="text" />
+          <span>NACHRICHT</span>
+          <input class="contact-big-input" type="text" />
+          <button>Nachricht senden</button>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-links">
+          <a href="/datenschutz">DATENSCHUTZ</a>
+          <span>|</span>
+          <a href="/impressum">IMPRESSUM</a>
+        </div>
+        <div class="footer-image">
+          <span>powered by</span>
+          <img src="./img/FEF_Logo.png" alt="logo Five Elements" />
+        </div>
+      </footer>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.min.js"
+      integrity="sha512-2ES1bMYVtDkWzlzuUr6EkA0WZ4Vhg/cYBCBBlr0QtKAd12X9EWO1/JwId+9AVQnX7xu684o+7BElKL9HLd/YfQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

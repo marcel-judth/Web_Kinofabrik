@@ -1,0 +1,161 @@
+.home {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/Hauptbild.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+#logo {
+  height: 50vh;
+  position: absolute;
+  cursor: pointer;
+  animation: flyinLeft 1s ease;
+}
+
+.buy-tickets-img {
+  height: 20vh;
+  position: absolute;
+  right: -2%;
+  top: 10%;
+  //   opacity: 0;
+  transition: all 0.5s ease-in-out;
+  animation: flyinRight 1s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+  }
+}
+
+nav {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  opacity: 1;
+
+  animation: fadIn 1s ease;
+
+  ul {
+    padding: 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  a {
+    font-size: 1.6vw;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//Burger
+.nav-mobile {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.burger {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+
+  span {
+    padding: 0.1rem 1.2rem;
+    background: white;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+}
+
+.nav-open {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+.toggle {
+  .line1 {
+    transform: rotateZ(45deg) translateY(480%);
+  }
+  .line3 {
+    transform: rotateZ(-45deg) translateY(-480%);
+  }
+  .line2 {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .buy-tickets-img {
+    top: 50%;
+  }
+
+  #logo {
+    max-width: 20rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  nav {
+    background: black;
+    opacity: 0.9;
+    height: 100vh;
+    width: 70vw;
+    right: 0%;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+      top: 0%;
+      right: 0%;
+    }
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+@keyframes flyinLeft {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes flyinRight {
+  from {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
