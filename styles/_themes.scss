@@ -1,5 +1,8 @@
 .themes {
-  height: 100vh;
+  margin-top: 20vh;
+
+  min-height: 100vh;
+  height: auto;
   h2 {
     text-align: center;
     font-weight: 300;
@@ -20,7 +23,7 @@
 
   .card {
     width: 25vw;
-    min-width: 30rem;
+    min-width: 20rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
     position: relative;

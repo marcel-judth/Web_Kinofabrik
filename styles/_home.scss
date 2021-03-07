@@ -1,9 +1,15 @@
+.home-wrapper {
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+}
+
 .home {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   background-image: url('../img/Hauptbild.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   overflow: hidden;
   width: 100%;
 }
@@ -18,9 +24,8 @@
 .buy-tickets-img {
   height: 20vh;
   position: absolute;
-  right: -2%;
+  right: -2rem;
   top: 10%;
-  //   opacity: 0;
   transition: all 0.5s ease-in-out;
   animation: flyinRight 1s ease;
   cursor: pointer;
@@ -32,11 +37,9 @@
 }
 
 nav {
-  position: absolute;
-  bottom: 0%;
   width: 100%;
   opacity: 1;
-
+  height: 10vh;
   animation: fadIn 1s ease;
 
   ul {
@@ -50,6 +53,7 @@ nav {
 
   a {
     font-size: 1.6vw;
+
     font-weight: 600;
     &:hover {
       text-decoration: underline;
@@ -95,6 +99,14 @@ nav {
   }
 }
 
+@media (min-width: 1400px) {
+  ul {
+    a {
+      font-size: 1.6rem !important;
+    }
+  }
+}
+
 @media (max-width: 1000px) {
   .buy-tickets-img {
     top: 50%;
@@ -108,6 +120,8 @@ nav {
 
 @media (max-width: 750px) {
   nav {
+    position: absolute;
+    bottom: 0%;
     background: black;
     opacity: 0.9;
     height: 100vh;
@@ -123,6 +137,9 @@ nav {
       height: 100%;
       top: 0%;
       right: 0%;
+      a {
+        font-size: 1rem;
+      }
     }
   }
 
