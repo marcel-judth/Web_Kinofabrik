@@ -1,0 +1,46 @@
+.background-img {
+  width: 100%;
+  height: auto;
+}
+
+.background-img-wrapper {
+  position: relative;
+
+  .get-ticket-img {
+    position: absolute;
+    height: 30vh;
+    width: auto;
+    bottom: 0.5%;
+    left: 0;
+  }
+
+  .cinema-tickets-img {
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    right: 0;
+    bottom: 10%;
+    transform: translateY(50%);
+  }
+}
+
+.tickets {
+  color: white;
+  font-size: 1.5rem;
+  //   ul {
+  //     margin-top: 25vh;
+  //     width: fit-content;
+  //     margin-right: auto;
+  //     margin-left: auto;
+  //   }
+
+  //   li {
+  //     width: fit-content;
+  //   }
+  table {
+    margin: 25vh auto;
+  }
+  td {
+    padding: 1rem 2rem;
+  }
+}
