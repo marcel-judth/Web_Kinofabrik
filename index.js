@@ -44,3 +44,13 @@ function onPersonSelect(e) {
   e.target.classList.add('active');
   textElement.classList.add('active');
 }
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+  });
+});
