@@ -1,3 +1,7 @@
+#veranstaltungen {
+  margin-top: 10rem;
+}
+
 .background-img {
   width: 100%;
   height: auto;
@@ -8,8 +12,9 @@
 
   .get-ticket-img {
     position: absolute;
-    height: 30vh;
-    width: auto;
+    width: 30vw;
+    max-width: 20rem;
+    height: auto;
     bottom: 0.5%;
     left: 0;
   }
@@ -43,4 +48,8 @@
   td {
     padding: 1rem 2rem;
   }
+}
+
+.shopify-buy__product {
+  display: flex !important;
 }
