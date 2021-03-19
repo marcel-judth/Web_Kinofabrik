@@ -27,11 +27,11 @@ VisSense.VisMon.Builder(VisSense(myVideo))
   .start();
 
 function onPersonSelect(e) {
-  console.log(e.target);
   const persons = document.querySelectorAll('.person');
   const textWrapper = document.querySelectorAll('.person-text-wrapper');
   const id = e.target.id;
   const textElement = document.querySelector('.' + id + '-text');
+  console.log('.' + id + '-text');
 
   persons.forEach((e) => {
     e.classList.remove('active');

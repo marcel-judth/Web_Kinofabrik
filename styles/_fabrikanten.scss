@@ -8,31 +8,59 @@
   height: auto;
 }
 
+.person-img-cutter {
+  height: 10vh;
+}
+
 .person {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 20%;
-  height: auto;
-  opacity: 0.3;
+  bottom: -5%;
+  width: auto;
+  height: 75%;
+  opacity: 0;
   cursor: pointer;
 }
 
+.img-team {
+  position: absolute;
+  left: 0;
+  bottom: -5%;
+  width: 100%;
+  height: auto;
+}
+
+.person1 {
+  left: 6.2%;
+}
+
 .person2 {
-  left: 20%;
+  left: 16.2%;
 }
 
 .person3 {
-  left: 40%;
+  left: 24.5%;
+  height: 78%;
 }
 
 .person4 {
-  left: 60%;
-}
-.person5 {
-  left: 80%;
+  left: 39%;
+  height: 84%;
 }
 
+.person5 {
+  left: 50.85%;
+  height: 83%;
+}
+
+.person6 {
+  right: 17.5%;
+  height: 77%;
+}
+
+.person7 {
+  right: 5%;
+  height: 70%;
+}
 .person.active {
   opacity: 1;
 }
@@ -129,7 +157,23 @@
   }
 }
 .person5-text {
-  right: 2%;
+  right: 35%;
+  .person-text {
+    text-align: right;
+    margin-left: auto;
+    padding-right: 1.5rem;
+  }
+}
+.person6-text {
+  right: 30%;
+  .person-text {
+    text-align: right;
+    margin-left: auto;
+    padding-right: 1.5rem;
+  }
+}
+.person7-text {
+  right: 7%;
   .person-text {
     text-align: right;
     margin-left: auto;
