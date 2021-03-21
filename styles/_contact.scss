@@ -1,11 +1,13 @@
 .contact {
-  height: 100vh;
-  max-height: auto;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  margin-top: 20vh;
 }
 
 .contact-wrapper {
@@ -40,6 +42,9 @@
     margin-top: 1.5rem;
     font-size: 1.5rem;
     text-align: end;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -54,6 +59,14 @@
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
+  }
+
+  textarea {
+    width: 30vw;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-family: 'montserrat', sans-serif;
   }
 
   span {
@@ -128,6 +141,11 @@ footer {
   }
   footer {
     width: 100%;
+    margin-top: 4rem;
+
+    .footer-image {
+      margin-top: 2rem;
+    }
   }
 
   .contact-wrapper {
@@ -139,22 +157,28 @@ footer {
       font-family: 'montserrat', sans-serif;
       font-weight: 300;
       text-align: start;
+      font-size: 2.2rem;
+      text-align: center;
     }
     h3 {
-      font-size: 1.5rem;
+      text-align: center;
+      font-size: 1rem;
       font-weight: 300;
-      text-align: start;
+      // text-align: start;
+      margin-bottom: 0.2rem;
     }
 
     h4 {
-      margin-top: 3rem;
-      font-size: 1.7rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
       font-weight: 500;
-      text-align: start;
+      // text-align: start;
     }
     a {
-      margin-top: 1.5rem;
-      font-size: 1.5rem;
+      margin: 1.5rem auto;
+      font-size: 1.2rem;
       text-align: start;
     }
     margin-bottom: 2rem;
@@ -162,7 +186,8 @@ footer {
 
   .contact-form {
     margin-left: 0rem;
-    input {
+    input,
+    textarea {
       width: 80vw;
     }
   }

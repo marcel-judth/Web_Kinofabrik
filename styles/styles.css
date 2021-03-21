@@ -289,7 +289,7 @@ nav a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow-x: auto;
-  padding: 1rem 5rem;
+  padding: 1rem 10vw;
 }
 
 .themes .cards-wrapper::-webkit-scrollbar {
@@ -307,7 +307,7 @@ nav a:hover {
   width: 25vw;
   min-width: 20rem;
   margin: 0rem 1rem;
-  padding-left: 2rem;
+  padding: 0rem 2rem;
   padding-bottom: 2rem;
   position: relative;
   cursor: pointer;
@@ -488,8 +488,8 @@ nav a:hover {
 }
 
 .contact {
-  height: 100vh;
-  max-height: auto;
+  height: auto;
+  min-height: 100vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,6 +504,7 @@ nav a:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-top: 20vh;
 }
 
 .contact-wrapper {
@@ -555,6 +556,10 @@ nav a:hover {
   text-align: end;
 }
 
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
 .contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,6 +582,14 @@ nav a:hover {
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+}
+
+.contact-form textarea {
+  width: 30vw;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-family: 'montserrat', sans-serif;
 }
 
 .contact-form span {
@@ -673,6 +686,10 @@ footer .footer-image span {
   }
   footer {
     width: 100%;
+    margin-top: 4rem;
+  }
+  footer .footer-image {
+    margin-top: 2rem;
   }
   .contact-wrapper {
     display: block;
@@ -684,27 +701,32 @@ footer .footer-image span {
     font-family: 'montserrat', sans-serif;
     font-weight: 300;
     text-align: start;
+    font-size: 2.2rem;
+    text-align: center;
   }
   .contact-info h3 {
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
     font-weight: 300;
-    text-align: start;
+    margin-bottom: 0.2rem;
   }
   .contact-info h4 {
-    margin-top: 3rem;
-    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    text-align: start;
   }
   .contact-info a {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+    margin: 1.5rem auto;
+    font-size: 1.2rem;
     text-align: start;
   }
   .contact-form {
     margin-left: 0rem;
   }
-  .contact-form input {
+  .contact-form input,
+  .contact-form textarea {
     width: 80vw;
   }
 }
@@ -733,7 +755,8 @@ footer .footer-image span {
 
 .background-img-wrapper .cinema-tickets-img {
   position: absolute;
-  width: 35vw;
+  width: 30vw;
+  max-width: 30rem;
   height: auto;
   right: 0;
   bottom: 10%;
@@ -754,29 +777,28 @@ footer .footer-image span {
   padding: 1rem 2rem;
 }
 
-.shopify-buy__product {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
-.test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #fabrikanten {
-  margin-bottom: 30rem;
+  margin-bottom: 10rem;
 }
 
 .scroll-wrapper {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: visible;
   height: 85%;
   width: 300rem;
   position: relative;
   margin-top: auto;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  height: 4px;
+  /* At least not zero */
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Or any other instruction making the element visible */
+  border-radius: 5px;
 }
 
 .image-wrapper {
@@ -802,9 +824,11 @@ footer .footer-image span {
 }
 
 .fab-text {
-  height: 30vh;
+  height: 45vh;
   width: 100%;
   max-height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .person-img-cutter {
@@ -879,8 +903,23 @@ footer .footer-image span {
   opacity: 1;
 }
 
+.person-text-wrapper.active .border-bottom {
+  -webkit-animation: drawBorder 0.5s 0.5s ease-in-out forwards;
+          animation: drawBorder 0.5s 0.5s ease-in-out forwards;
+}
+
+.person-text-wrapper.active .border-left {
+  -webkit-animation: drawBorderLeft 0.5s ease-in-out forwards;
+          animation: drawBorderLeft 0.5s ease-in-out forwards;
+}
+
+.person-text-wrapper.active .border-right {
+  -webkit-animation: drawBorderLeft 0.5s ease-in-out forwards;
+          animation: drawBorderLeft 0.5s ease-in-out forwards;
+}
+
 .person-text {
-  max-width: 30%;
+  max-width: 40%;
   padding-left: 1.5rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -891,10 +930,6 @@ footer .footer-image span {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 500;
-}
-
-.person-text p {
-  min-width: 25rem;
 }
 
 .person-text .person-card-text {
@@ -936,32 +971,16 @@ footer .footer-image span {
   right: 0%;
 }
 
-.person-text .border-bottom {
-  -webkit-animation: drawBorder 1s ease-in-out forwards;
-          animation: drawBorder 1s ease-in-out forwards;
-}
-
-.person-text .border-left {
-  -webkit-animation: drawBorderLeft 1s ease-in-out forwards;
-          animation: drawBorderLeft 1s ease-in-out forwards;
-}
-
-.person-text .border-right {
-  -webkit-animation: drawBorderLeft 1s ease-in-out forwards;
-          animation: drawBorderLeft 1s ease-in-out forwards;
-}
-
 .person1-text {
-  left: 10%;
-  bottom: -20%;
+  left: 20%;
 }
 
 .person2-text {
-  left: 17%;
+  left: 25%;
 }
 
 .person3-text {
-  left: 28%;
+  left: 35%;
 }
 
 .person4-text {
@@ -970,6 +989,7 @@ footer .footer-image span {
 
 .person5-text {
   right: 32%;
+  left: unset;
 }
 
 .person5-text .person-text {
@@ -978,8 +998,14 @@ footer .footer-image span {
   padding-right: 1.5rem;
 }
 
+.person5-text .border-bottom {
+  right: 0;
+  left: unset;
+}
+
 .person6-text {
-  right: 20%;
+  right: 25%;
+  left: unset;
 }
 
 .person6-text .person-text {
@@ -988,14 +1014,83 @@ footer .footer-image span {
   padding-right: 1.5rem;
 }
 
+.person6-text .border-bottom {
+  right: 0;
+  left: unset;
+}
+
 .person7-text {
-  right: 9%;
+  right: 20%;
+  left: unset;
 }
 
 .person7-text .person-text {
   text-align: right;
   margin-left: auto;
   padding-right: 1.5rem;
+}
+
+.person7-text .border-bottom {
+  right: 0;
+  left: unset;
+}
+
+@media (max-width: 900px) {
+  .person-text {
+    max-width: initial;
+  }
+  .person1-text,
+  .person2-text,
+  .person3-text,
+  .person4-text,
+  .person5-text,
+  .person6-text,
+  .person7-text {
+    left: 10%;
+    right: 10%;
+  }
+  .person1-text .person-text,
+  .person2-text .person-text,
+  .person3-text .person-text,
+  .person4-text .person-text,
+  .person5-text .person-text,
+  .person6-text .person-text,
+  .person7-text .person-text {
+    text-align: left;
+    margin-left: 0;
+    padding-right: 0rem;
+    height: auto;
+  }
+  .person1-text .person-card-text,
+  .person2-text .person-card-text,
+  .person3-text .person-card-text,
+  .person4-text .person-card-text,
+  .person5-text .person-card-text,
+  .person6-text .person-card-text,
+  .person7-text .person-card-text {
+    min-width: 0;
+  }
+  .person1-text .border-right,
+  .person2-text .border-right,
+  .person3-text .border-right,
+  .person4-text .border-right,
+  .person5-text .border-right,
+  .person6-text .border-right,
+  .person7-text .border-right {
+    width: 2px;
+    top: 0%;
+    left: 0%;
+  }
+  .person1-text .border-bottom,
+  .person2-text .border-bottom,
+  .person3-text .border-bottom,
+  .person4-text .border-bottom,
+  .person5-text .border-bottom,
+  .person6-text .border-bottom,
+  .person7-text .border-bottom {
+    left: 0;
+    right: unset;
+  }
 }
 
 @keyframes drawBorder {

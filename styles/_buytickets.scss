@@ -21,7 +21,8 @@
 
   .cinema-tickets-img {
     position: absolute;
-    width: 35vw;
+    width: 30vw;
+    max-width: 30rem;
     height: auto;
     right: 0;
     bottom: 10%;
@@ -39,15 +40,4 @@
   td {
     padding: 1rem 2rem;
   }
-}
-
-.shopify-buy__product {
-  display: flex !important;
-}
-
-.test {
-  display: flex;
-}
-
-#collection-component-1616230435336 {
 }

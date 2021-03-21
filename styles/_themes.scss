@@ -19,23 +19,27 @@
     justify-content: space-between;
     // margin-right: 2rem;
     overflow-x: auto;
-    padding: 1rem 5rem;
+    padding: 1rem 10vw;
 
     &::-webkit-scrollbar {
       height: 4px; /* At least not zero */
     }
     &::-webkit-scrollbar-thumb {
-      background-color: rgba(255, 255, 255, 0.5); /* Or any other instruction making the element visible */
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+      ); /* Or any other instruction making the element visible */
       border-radius: 5px;
     }
-
   }
 
   .card {
     width: 25vw;
     min-width: 20rem;
     margin: 0rem 1rem;
-    padding-left: 2rem;
+    padding: 0rem 2rem;
     padding-bottom: 2rem;
     position: relative;
     cursor: pointer;
@@ -149,11 +153,10 @@
 }
 
 @media (max-width: 1300px) {
-  .cards-wrapper{
+  .cards-wrapper {
     padding: 1rem 0rem !important;
   }
 }
-
 
 @keyframes fadeIn {
   from {

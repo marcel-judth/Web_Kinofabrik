@@ -29,12 +29,13 @@
           alt="logo Kinofabrik"
           loading="lazy"
         />
+        <a href="#veranstaltungen">
         <img
           class="buy-tickets-img"
           src="./img/Hier-Tickets-kaufen.png"
           alt="buy tickets image"
           loading="lazy"
-        />
+        ></img></a>
       </div>
       <nav class="nav-links">
         <ul>
@@ -167,7 +168,7 @@
             <img
               id="person1"
               onclick="onPersonSelect(event)"
-              class="person1 person active"
+              class="person1 person"
               src="./img/Birgit.png"
               alt=""
               loading="lazy"
@@ -191,7 +192,7 @@
             <img
               id="person4"
               onclick="onPersonSelect(event)"
-              class="person4 person"
+              class="person4 person active"
               src="./img/Jana.png"
               alt=""
               loading="lazy"
@@ -221,35 +222,10 @@
               loading="lazy"
             />
           </div>
-
-          <div class="person-text-wrapper person1-text active">
-            <div class="person-text">
-              <div class="border-left"></div>
-              <div class="border-bottom"></div>
-              <div class="hide">
-                <h3>Birgit</h3>
-              </div>
-              <div class="hide person-card-role-text">
-                <h4>
-                  GESCHÄFTSFÜHRERIN <br />
-                  FILMPRODUZENTIN, DREHBUCH, <br />
-                  DREHPLANUNG, REGIE <br />
-                </h4>
-              </div>
-              <div class="hide person-card-text">
-                <p>
-                  "Ich finde grundsätlich jeden Menschen und jedes Thema
-                  spannend. Denn hinter fast jeder Fassade oder unter fast allen
-                  Oberflächen liegen interessante und ungewöhnliche Geschichten,
-                  die nur darauf warten, erzählt zu werden."
-                </p>
-              </div>
-            </div>
-          </div>
-      </div>
+        </div>
       </div>
 
-      <!-- <div class="fab-text">
+      <div class="fab-text">
         <div class="person-text-wrapper person1-text">
           <div class="person-text">
             <div class="border-left"></div>
@@ -273,7 +249,7 @@
               </p>
             </div>
           </div>
-        </div> -->
+        </div>
         <div class="person-text-wrapper person2-text">
           <div class="person-text">
             <div class="border-left"></div>
@@ -318,7 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="person-text-wrapper person4-text">
+        <div class="person-text-wrapper person4-text active">
           <div class="person-text">
             <div class="border-left"></div>
             <div class="border-bottom"></div>
@@ -409,11 +385,11 @@
       </div>
     </section>
 
-    <section id="#veranstaltungen">
+    <section id="veranstaltungen">
       <div class="background-img-wrapper">
         <img
           class="background-img"
-          src="./img/Tickets kaufen.png"
+          src="./img/Tickets-kaufen.png"
           alt="buy tickets"
           loading="lazy"
         />
@@ -485,7 +461,7 @@
                       styles: {
                         product: {
                           '@media (min-width: 601px)': {
-                            'min-width': '20rem',
+                            'min-width': '30rem',
                             'margin-left': '20px',
                             'margin-bottom': '50px',
                             width: '50%',
@@ -505,7 +481,7 @@
                             'background-color': '#fa1a2e',
                           },
                           'background-color': '#930f1b',
-                          margin: '0',
+                          'margin-bottom': '0',
                           ':focus': {
                             'background-color': '#fa1a2e',
                           },
@@ -513,7 +489,8 @@
                         price: {
                           'font-family': 'Montserrat, sans-serif',
                           'font-size': '16px',
-                          margin: '0rem auto',
+                          'margin-left': '4rem',
+                          'margin-top': 'auto',
                           color: '#ffffff',
                         },
                         compareAt: {
@@ -669,7 +646,7 @@
           <h3>Villacher Straße 95</h3>
           <h3>9800 Spittal an der Drau</h3>
           <br />
-          <a>+43 664 14 28 953</a>
+          <a href="tel:+436641428953">Tel: +43 664 14 28 953</a>
         </div>
         <div class="contact-form">
           <span>NAME</span>
@@ -677,7 +654,8 @@
           <span>E-MAIL</span>
           <input type="text" />
           <span>NACHRICHT</span>
-          <input class="contact-big-input" type="text" />
+          <textarea class="contact-big-input" rows="4" cols="50"> </textarea>
+
           <button>Nachricht senden</button>
         </div>
       </div>
@@ -689,11 +667,12 @@
         </div>
         <div class="footer-image">
           <span>powered by</span>
+          <a href="https://five-elements-films.com/" target="_blank">
           <img
             src="./img/FEF_Logo.png"
             alt="logo Five Elements"
             loading="lazy"
-          />
+          /></a>
         </div>
       </footer>
     </section>
@@ -710,7 +689,7 @@
     ></script>
     <script src="./index.js"></script>
     <script>
-      const slider = document.querySelector('#fabrikanten');
+      const slider = document.querySelector('.scroll-wrapper');
       let mouseDown = false;
       let startX, scrollLeft;
 
@@ -739,8 +718,8 @@
       slider.addEventListener('mouseleave', stopDragging, false);
 
       $(document).ready(function () {
-        var outerContent = $('#fabrikanten');
-        var innerContent = $('#fabrikanten > div');
+        var outerContent = $('.scroll-wrapper');
+        var innerContent = $('.scroll-wrapper > div');
 
         outerContent.scrollLeft(
           (innerContent.width() - outerContent.width()) / 2

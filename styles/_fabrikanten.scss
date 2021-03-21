@@ -1,16 +1,29 @@
 #fabrikanten {
-  margin-bottom: 30rem;
+  margin-bottom: 10rem;
 }
 
 .scroll-wrapper {
   // overflow-x: auto;
   // overflow-y: visible;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: visible;
   height: 85%;
   width: 300rem;
   position: relative;
   margin-top: auto;
+
+  &::-webkit-scrollbar {
+    height: 4px; /* At least not zero */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.5
+    ); /* Or any other instruction making the element visible */
+    border-radius: 5px;
+  }
 }
 
 .image-wrapper {
@@ -30,9 +43,11 @@
 }
 
 .fab-text {
-  height: 30vh;
+  height: 45vh;
   width: 100%;
   max-height: auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .person-img-cutter {
@@ -110,10 +125,21 @@
 
 .person-text-wrapper.active {
   opacity: 1;
+
+  .border-bottom {
+    animation: drawBorder 0.5s 0.5s ease-in-out forwards;
+  }
+
+  .border-left {
+    animation: drawBorderLeft 0.5s ease-in-out forwards;
+  }
+  .border-right {
+    animation: drawBorderLeft 0.5s ease-in-out forwards;
+  }
 }
 
 .person-text {
-  max-width: 30%;
+  max-width: 40%;
   padding-left: 1.5rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -124,9 +150,7 @@
     margin-bottom: 1rem;
     font-weight: 500;
   }
-  p {
-    min-width: 25rem;
-  }
+
   .person-card-text {
     margin-top: 1rem;
     font-size: 0.8rem;
@@ -165,55 +189,93 @@
     top: 0%;
     right: 0%;
   }
-
-  .border-bottom {
-    animation: drawBorder 1s ease-in-out forwards;
-  }
-
-  .border-left {
-    animation: drawBorderLeft 1s ease-in-out forwards;
-  }
-  .border-right {
-    animation: drawBorderLeft 1s ease-in-out forwards;
-  }
 }
 
 .person1-text {
-  left: 10%;
-  bottom: -20%;
+  left: 20%;
 }
 
 .person2-text {
-  left: 17%;
+  left: 25%;
 }
 .person3-text {
-  left: 28%;
+  left: 35%;
 }
 .person4-text {
   left: 42%;
 }
 .person5-text {
   right: 32%;
+  left: unset;
   .person-text {
     text-align: right;
     margin-left: auto;
     padding-right: 1.5rem;
+  }
+  .border-bottom {
+    right: 0;
+    left: unset;
   }
 }
 .person6-text {
-  right: 20%;
+  right: 25%;
+  left: unset;
   .person-text {
     text-align: right;
     margin-left: auto;
     padding-right: 1.5rem;
   }
+  .border-bottom {
+    right: 0;
+    left: unset;
+  }
 }
 .person7-text {
-  right: 9%;
+  right: 20%;
+  left: unset;
   .person-text {
     text-align: right;
     margin-left: auto;
     padding-right: 1.5rem;
+  }
+  .border-bottom {
+    right: 0;
+    left: unset;
+  }
+}
+
+@media (max-width: 900px) {
+  .person-text {
+    max-width: initial;
+  }
+
+  .person1-text,
+  .person2-text,
+  .person3-text,
+  .person4-text,
+  .person5-text,
+  .person6-text,
+  .person7-text {
+    left: 10%;
+    right: 10%;
+    .person-text {
+      text-align: left;
+      margin-left: 0;
+      padding-right: 0rem;
+      height: auto;
+    }
+    .person-card-text {
+      min-width: 0;
+    }
+    .border-right {
+      width: 2px;
+      top: 0%;
+      left: 0%;
+    }
+    .border-bottom {
+      left: 0;
+      right: unset;
+    }
   }
 }
 
