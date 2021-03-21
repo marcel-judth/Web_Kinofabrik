@@ -31,7 +31,7 @@
         />
         <img
           class="buy-tickets-img"
-          src="./img/Hier Tickets kaufen.png"
+          src="./img/Hier-Tickets-kaufen.png"
           alt="buy tickets image"
           loading="lazy"
         />
@@ -414,7 +414,10 @@
             <td>Ohne Holz keine Musik</td>
           </tr>
         </table>
-        <div id="collection-component-1616183120133"></div>
+
+        <div id="placeholder"></div>
+
+        <div id="collection-component-1616230435336"></div>
         <script type="text/javascript">
           /*<![CDATA[*/
           (function () {
@@ -448,16 +451,179 @@
                 ui.createComponent('collection', {
                   id: '262068306093',
                   node: document.getElementById(
-                    'collection-component-1616183120133'
+                    'collection-component-1616230435336'
                   ),
                   moneyFormat:
                     '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+                  options: {
+                    product: {
+                      styles: {
+                        product: {
+                          '@media (min-width: 601px)': {
+                            'min-width': '20rem',
+                            'margin-left': '20px',
+                            'margin-bottom': '50px',
+                            "width": '50%',
+                            "display": 'flex',
+                            "align-items": "center",
+                            "justify-content": "center"
+                          },
+                        },
+                        title: {
+                          'font-family': 'Montserrat, sans-serif',
+                          'font-weight': 'normal',
+                          'font-size': '19px',
+                          color: '#ffffff',
+                        },
+                        button: {
+                          ':hover': {
+                            'background-color': '#fa1a2e',
+                          },
+                          'background-color': '#930f1b',
+                          'margin': '0',
+                          ':focus': {
+                            'background-color': '#fa1a2e',
+                          },
+                        },
+                        price: {
+                          'font-family': 'Montserrat, sans-serif',
+                          'font-size': '16px',
+                          'margin': '0rem auto',
+                          color: '#ffffff',
+                        },
+                        compareAt: {
+                          'font-family': 'Montserrat, sans-serif',
+                          'font-size': '13.6px',
+                          color: '#ffffff',
+                        },
+                        unitPrice: {
+                          'font-family': 'Montserrat, sans-serif',
+                          'font-size': '20.6px',
+                          color: '#ffffff',
+                        },
+                      },
+                      buttonDestination: 'checkout',
+                      contents: {
+                        button: false,
+                        buttonWithQuantity: true,
+                      },
+                      text: {
+                        button: 'Jetzt kaufen',
+                      },
+                      googleFonts: ['Montserrat'],
+                    },
+                    productSet: {
+                      styles: {
+                        products: {
+                          '@media (min-width: 601px)': {
+                            'margin-left': '-20px',
+                          },
+                        },
+                      },
+                    },
+                    modalProduct: {
+                      contents: {
+                        img: false,
+                        imgWithCarousel: true,
+                        button: false,
+                        buttonWithQuantity: true,
+                      },
+                      styles: {
+                        product: {
+                          '@media (min-width: 601px)': {
+                            'max-width': '100%',
+                            'margin-left': '0px',
+                            'margin-bottom': '0px',
+                            display: 'flex',
+                          },
+                        },
+                        button: {
+                          ':hover': {
+                            'background-color': '#fa1a2e',
+                          },
+                          'background-color': '#930f1b',
+                          ':focus': {
+                            'background-color': '#fa1a2e',
+                          },
+                        },
+                        title: {
+                          'font-family': 'Helvetica Neue, sans-serif',
+                          'font-weight': 'bold',
+                          'font-size': '26px',
+                          color: '#4c4c4c',
+                        },
+                        price: {
+                          'font-family': 'Helvetica Neue, sans-serif',
+                          'font-weight': 'normal',
+                          'font-size': '18px',
+                          color: '#4c4c4c',
+                        },
+                        compareAt: {
+                          'font-family': 'Helvetica Neue, sans-serif',
+                          'font-weight': 'normal',
+                          'font-size': '15.299999999999999px',
+                          color: '#4c4c4c',
+                        },
+                        unitPrice: {
+                          'font-family': 'Helvetica Neue, sans-serif',
+                          'font-weight': 'normal',
+                          'font-size': '15.299999999999999px',
+                          color: '#4c4c4c',
+                        },
+                      },
+                      text: {
+                        button: 'Add to cart',
+                      },
+                    },
+                    option: {
+                      styles: {
+                        label: {
+                          'font-family': 'Montserrat, sans-serif',
+                        },
+                        select: {
+                          'font-family': 'Montserrat, sans-serif',
+                        },
+                      },
+                      googleFonts: ['Montserrat'],
+                    },
+                    cart: {
+                      styles: {
+                        button: {
+                          ':hover': {
+                            'background-color': '#fa1a2e',
+                          },
+                          'background-color': '#930f1b',
+                          ':focus': {
+                            'background-color': '#fa1a2e',
+                          },
+                        },
+                      },
+                      text: {
+                        total: 'Subtotal',
+                        button: 'Checkout',
+                      },
+                    },
+                    toggle: {
+                      styles: {
+                        toggle: {
+                          'background-color': '#930f1b',
+                          ':hover': {
+                            'background-color': '#fa1a2e',
+                          },
+                          ':focus': {
+                            'background-color': '#fa1a2e',
+                          },
+                        },
+                      },
+                    },
+                  },
                 });
               });
             }
           })();
           /*]]>*/
         </script>
+        
         <!-- <ul class="tickets">
           <li>20.02.2021&emsp;20:45&emsp;Ohne Holz keine Musik</li>
           <li>24.02.2021&emsp;20:45&emsp;Vorlesung</li>
@@ -547,16 +713,45 @@
       slider.addEventListener('mouseup', stopDragging, false);
       slider.addEventListener('mouseleave', stopDragging, false);
 
-      $(document).ready(function () {
-        $(document).ready(function () {
-          var outerContent = $('#fabrikanten');
-          var innerContent = $('#fabrikanten > div');
+      // const cardsSlider = document.querySelector('.cards-wrapper');
+      // let mouseDownCard = false;
+      // let startXCards, scrollLeftCards;
 
-          outerContent.scrollLeft(
-            (innerContent.width() - outerContent.width()) / 2
-          );
-        });
+      // let startCardDragging = function (e) {
+      //   mouseDownCard = true;
+      //   startXCards = e.pageX - cardsSlider.offsetLeft;
+      //   scrollLeftCards = cardsSlider.scrollLeft;
+      // };
+      // let stopCardDragging = function (event) {
+      //   mouseDownCard = false;
+      // };
+
+      // cardsSlider.addEventListener('mousemove', (e) => {
+      //   e.preventDefault();
+      //   if (!mouseDownCard) {
+      //     return;
+      //   }
+      //   const x = e.pageX - cardsSlider.offsetLeft;
+      //   const scroll = x - startXCards;
+      //   cardsSlider.scrollLeft = scrollLeftCards - scroll;
+      // });
+
+      // // Add the event listeners
+      // cardsSlider.addEventListener('mousedown', startCardDragging, false);
+      // cardsSlider.addEventListener('mouseup', stopCardDragging, false);
+      // cardsSlider.addEventListener('mouseleave', stopCardDragging, false);
+
+      
+
+      $(document).ready(function () {
+        var outerContent = $('#fabrikanten');
+        var innerContent = $('#fabrikanten > div');
+
+        outerContent.scrollLeft(
+          (innerContent.width() - outerContent.width()) / 2
+        );
       });
+      
     </script>
   </body>
 </html>

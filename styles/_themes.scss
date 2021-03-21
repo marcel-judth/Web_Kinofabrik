@@ -16,14 +16,25 @@
     margin-top: 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-right: 2rem;
     overflow-x: auto;
+    padding: 1rem 5rem;
+
+    &::-webkit-scrollbar {
+      height: 4px; /* At least not zero */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.5); /* Or any other instruction making the element visible */
+      border-radius: 5px;
+    }
+
   }
 
   .card {
     width: 25vw;
     min-width: 20rem;
+    margin: 0rem 1rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
     position: relative;
@@ -37,6 +48,7 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
+      pointer-events: none;
     }
 
     .card-main-img-overlay {
@@ -47,11 +59,13 @@
       left: 0%;
       background: black;
       opacity: 0;
+      pointer-events: none;
     }
 
     .card-images {
       position: relative;
       margin-bottom: 2rem;
+      pointer-events: none;
     }
 
     .hide {
@@ -65,6 +79,7 @@
       color: white;
       font-size: 1.5rem;
       transform: translateY(-100%);
+      pointer-events: none;
     }
 
     p {
@@ -72,17 +87,20 @@
       font-size: 0.8rem;
       font-weight: 200;
       transform: translateY(-100%);
+      pointer-events: none;
     }
 
     .card-text {
       margin-top: 1rem;
       margin-bottom: 1rem;
+      pointer-events: none;
     }
     .border-left,
     .border-bottom {
       position: absolute;
       background: white;
       z-index: 100;
+      pointer-events: none;
     }
 
     .border-bottom {
@@ -103,19 +121,19 @@
       //   border-bottom: solid white;
       //   transition: border 0.25s ease-in-out;
       h3 {
-        animation: flyIn 0.5s 0.75s ease-in-out forwards;
+        animation: flyIn 0.5s 0.5s ease-in-out forwards;
       }
 
       p {
-        animation: flyIn 0.5s 1.25s ease-in-out forwards;
+        animation: flyIn 0.5s 1s ease-in-out forwards;
       }
 
       .border-bottom {
-        animation: drawBorder 2s ease-in-out forwards;
+        animation: drawBorder 0.75s ease-in-out forwards;
       }
 
       .border-left {
-        animation: drawBorderLeft 2s ease-in-out forwards;
+        animation: drawBorderLeft 0.75s ease-in-out forwards;
       }
 
       .card-main-img-overlay {
@@ -129,6 +147,13 @@
     }
   }
 }
+
+@media (min-width: 1300px) {
+  .cards-wrapper {
+    padding: 1rem 2rem;
+  }
+}
+
 
 @keyframes fadeIn {
   from {
