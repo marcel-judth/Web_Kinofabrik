@@ -1,42 +1,70 @@
 #fabrikanten {
-  overflow-x: auto;
+  margin-bottom: 30rem;
 }
 
-.fab-background-wrapper {
+.scroll-wrapper {
+  // overflow-x: auto;
+  // overflow-y: visible;
+  overflow-x: scroll;
+  overflow-y: visible;
+  height: 85%;
+  width: 300rem;
   position: relative;
-  margin-bottom: 20rem;
-  min-width: 80rem;
-  // height: 80rem;
-  // background: url('../img/Hintergrund_Fabrikarbeiter.png') no-repeat center center fixed;
-  // background-size: cover;
+  margin-top: auto;
 }
 
-.fab-background-img {
+.image-wrapper {
+  position: relative;
+  height: 100%;
+  width: fit-content;
+  margin: 0rem auto;
+}
+
+.fab-background {
+  background: url('../img/Hintergrund_Fabrikarbeiter.png') no-repeat center top;
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.fab-text {
+  height: 30vh;
   width: 100%;
-  min-width: 80rem;
-  height: auto;
+  max-height: auto;
 }
 
 .person-img-cutter {
   height: 10vh;
 }
 
-.person {
-  position: absolute;
-  bottom: -5%;
-  width: auto;
-  height: 75%;
-  opacity: 0;
-  cursor: pointer;
-}
+// .team-wrapper{
+//   max-width: 100vw;
+//   overflow-x: auto;
+// }
 
 .img-team {
-  position: absolute;
+  // position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: -5%;
-  width: 100%;
-  min-width: 80rem;
-  height: auto;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+  min-width: 10%;
+  max-width: 3000rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.person {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  height: 80%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .person1 {
@@ -44,42 +72,35 @@
 }
 
 .person2 {
-  left: 16.2%;
+  left: 16.3%;
 }
 
 .person3 {
-  left: 24.5%;
-  height: 78%;
-}
-
-.person4 {
-  left: 39%;
+  left: 24.4%;
   height: 84%;
 }
 
+.person4 {
+  left: 39.2%;
+  height: 89%;
+}
+
 .person5 {
-  left: 50.85%;
-  height: 83%;
+  left: 50.8%;
+  height: 89%;
 }
 
 .person6 {
-  right: 17.5%;
-  height: 77%;
+  right: 17%;
+  height: 80%;
 }
 
 .person7 {
   right: 5%;
-  height: 70%;
+  height: 75%;
 }
 .person.active {
   opacity: 1;
-}
-
-.black-background {
-  width: 100%;
-  height: 10vh;
-  background: black;
-  position: absolute;
 }
 
 .person-text-wrapper {
@@ -102,6 +123,9 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 500;
+  }
+  p {
+    min-width: 25rem;
   }
   .person-card-text {
     margin-top: 1rem;
@@ -155,7 +179,8 @@
 }
 
 .person1-text {
-  left: 8%;
+  left: 10%;
+  bottom: -20%;
 }
 
 .person2-text {

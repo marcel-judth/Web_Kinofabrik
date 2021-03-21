@@ -154,79 +154,102 @@
     </section>
 
     <section id="fabrikanten">
-      <div class="fab-background-wrapper">
-        <img
-          class="img-team"
-          src="./img/Team-schwarz.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          class="fab-background-img"
-          src="./img/Hintergrund_Fabrikarbeiter.png"
-          alt="Fabrikarbeiter Bild"
-          loading="lazy"
-        />
+      <div class="fab-background">
+        <div class="scroll-wrapper">
+          <div class="image-wrapper">
+            <img
+              class="img-team"
+              src="./img/Team-schwarz.png"
+              alt=""
+              loading="lazy"
+            />
 
-        <img
-          id="person1"
-          onclick="onPersonSelect(event)"
-          class="person1 person"
-          src="./img/Birgit.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          id="person2"
-          onclick="onPersonSelect(event)"
-          class="person2 person"
-          src="./img/Christian-Schwester.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          id="person3"
-          onclick="onPersonSelect(event)"
-          class="person3 person"
-          src="./img/Marion.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          id="person4"
-          onclick="onPersonSelect(event)"
-          class="person4 person active"
-          src="./img/Jana.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          id="person5"
-          onclick="onPersonSelect(event)"
-          class="person5 person"
-          src="./img/Christian.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          id="person6"
-          onclick="onPersonSelect(event)"
-          class="person6 person"
-          src="./img/Selina.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          id="person7"
-          onclick="onPersonSelect(event)"
-          class="person7 person"
-          src="./img/Christina.png"
-          alt=""
-          loading="lazy"
-        />
+            <img
+              id="person1"
+              onclick="onPersonSelect(event)"
+              class="person1 person active"
+              src="./img/Birgit.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              id="person2"
+              onclick="onPersonSelect(event)"
+              class="person2 person"
+              src="./img/Christian-Schwester.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              id="person3"
+              onclick="onPersonSelect(event)"
+              class="person3 person"
+              src="./img/Marion.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              id="person4"
+              onclick="onPersonSelect(event)"
+              class="person4 person"
+              src="./img/Jana.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              id="person5"
+              onclick="onPersonSelect(event)"
+              class="person5 person"
+              src="./img/Christian.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              id="person6"
+              onclick="onPersonSelect(event)"
+              class="person6 person"
+              src="./img/Selina.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              id="person7"
+              onclick="onPersonSelect(event)"
+              class="person7 person"
+              src="./img/Christina.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
 
-        <div class="black-background"></div>
+          <div class="person-text-wrapper person1-text active">
+            <div class="person-text">
+              <div class="border-left"></div>
+              <div class="border-bottom"></div>
+              <div class="hide">
+                <h3>Birgit</h3>
+              </div>
+              <div class="hide person-card-role-text">
+                <h4>
+                  GESCHÄFTSFÜHRERIN <br />
+                  FILMPRODUZENTIN, DREHBUCH, <br />
+                  DREHPLANUNG, REGIE <br />
+                </h4>
+              </div>
+              <div class="hide person-card-text">
+                <p>
+                  "Ich finde grundsätlich jeden Menschen und jedes Thema
+                  spannend. Denn hinter fast jeder Fassade oder unter fast allen
+                  Oberflächen liegen interessante und ungewöhnliche Geschichten,
+                  die nur darauf warten, erzählt zu werden."
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
 
+      <!-- <div class="fab-text">
         <div class="person-text-wrapper person1-text">
           <div class="person-text">
             <div class="border-left"></div>
@@ -235,9 +258,11 @@
               <h3>Birgit</h3>
             </div>
             <div class="hide person-card-role-text">
-              GESCHÄFTSFÜHRERIN <br />
-              FILMPRODUZENTIN, DREHBUCH, <br />
-              DREHPLANUNG, REGIE <br />
+              <h4>
+                GESCHÄFTSFÜHRERIN <br />
+                FILMPRODUZENTIN, DREHBUCH, <br />
+                DREHPLANUNG, REGIE <br />
+              </h4>
             </div>
             <div class="hide person-card-text">
               <p>
@@ -248,7 +273,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="person-text-wrapper person2-text">
           <div class="person-text">
             <div class="border-left"></div>
@@ -293,7 +318,7 @@
             </div>
           </div>
         </div>
-        <div class="person-text-wrapper person4-text active">
+        <div class="person-text-wrapper person4-text">
           <div class="person-text">
             <div class="border-left"></div>
             <div class="border-bottom"></div>
@@ -407,13 +432,13 @@
         />
       </div>
       <div class="tickets">
-        <table>
+        <!-- <table>
           <tr>
             <td>20.02.2021</td>
             <td>20:45</td>
             <td>Ohne Holz keine Musik</td>
           </tr>
-        </table>
+        </table> -->
 
         <div id="placeholder"></div>
 
@@ -463,10 +488,10 @@
                             'min-width': '20rem',
                             'margin-left': '20px',
                             'margin-bottom': '50px',
-                            "width": '50%',
-                            "display": 'flex',
-                            "align-items": "center",
-                            "justify-content": "center"
+                            width: '50%',
+                            display: 'flex',
+                            'align-items': 'center',
+                            'justify-content': 'center',
                           },
                         },
                         title: {
@@ -480,7 +505,7 @@
                             'background-color': '#fa1a2e',
                           },
                           'background-color': '#930f1b',
-                          'margin': '0',
+                          margin: '0',
                           ':focus': {
                             'background-color': '#fa1a2e',
                           },
@@ -488,7 +513,7 @@
                         price: {
                           'font-family': 'Montserrat, sans-serif',
                           'font-size': '16px',
-                          'margin': '0rem auto',
+                          margin: '0rem auto',
                           color: '#ffffff',
                         },
                         compareAt: {
@@ -623,7 +648,7 @@
           })();
           /*]]>*/
         </script>
-        
+
         <!-- <ul class="tickets">
           <li>20.02.2021&emsp;20:45&emsp;Ohne Holz keine Musik</li>
           <li>24.02.2021&emsp;20:45&emsp;Vorlesung</li>
@@ -713,36 +738,6 @@
       slider.addEventListener('mouseup', stopDragging, false);
       slider.addEventListener('mouseleave', stopDragging, false);
 
-      // const cardsSlider = document.querySelector('.cards-wrapper');
-      // let mouseDownCard = false;
-      // let startXCards, scrollLeftCards;
-
-      // let startCardDragging = function (e) {
-      //   mouseDownCard = true;
-      //   startXCards = e.pageX - cardsSlider.offsetLeft;
-      //   scrollLeftCards = cardsSlider.scrollLeft;
-      // };
-      // let stopCardDragging = function (event) {
-      //   mouseDownCard = false;
-      // };
-
-      // cardsSlider.addEventListener('mousemove', (e) => {
-      //   e.preventDefault();
-      //   if (!mouseDownCard) {
-      //     return;
-      //   }
-      //   const x = e.pageX - cardsSlider.offsetLeft;
-      //   const scroll = x - startXCards;
-      //   cardsSlider.scrollLeft = scrollLeftCards - scroll;
-      // });
-
-      // // Add the event listeners
-      // cardsSlider.addEventListener('mousedown', startCardDragging, false);
-      // cardsSlider.addEventListener('mouseup', stopCardDragging, false);
-      // cardsSlider.addEventListener('mouseleave', stopCardDragging, false);
-
-      
-
       $(document).ready(function () {
         var outerContent = $('#fabrikanten');
         var innerContent = $('#fabrikanten > div');
@@ -751,7 +746,6 @@
           (innerContent.width() - outerContent.width()) / 2
         );
       });
-      
     </script>
   </body>
 </html>

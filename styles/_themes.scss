@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 2rem;
+    // margin-right: 2rem;
     overflow-x: auto;
     padding: 1rem 5rem;
 
@@ -148,9 +148,9 @@
   }
 }
 
-@media (min-width: 1300px) {
-  .cards-wrapper {
-    padding: 1rem 2rem;
+@media (max-width: 1300px) {
+  .cards-wrapper{
+    padding: 1rem 0rem !important;
   }
 }
 

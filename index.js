@@ -1,6 +1,7 @@
 const nav = document.querySelector('.nav-links');
 const burger = document.querySelector('.burger');
 const links = nav.querySelectorAll('a');
+const myVideo = document.getElementById('trailerVideo');
 
 burger.addEventListener('click', () => {
   nav.classList.toggle('nav-open');
@@ -13,8 +14,6 @@ links.forEach((link) => {
     burger.classList.toggle('toggle');
   });
 });
-
-var myVideo = document.getElementById('trailerVideo');
 
 VisSense.VisMon.Builder(VisSense(myVideo))
   .on('fullyvisible', function () {
@@ -31,7 +30,6 @@ function onPersonSelect(e) {
   const textWrapper = document.querySelectorAll('.person-text-wrapper');
   const id = e.target.id;
   const textElement = document.querySelector('.' + id + '-text');
-  console.log('.' + id + '-text');
 
   persons.forEach((e) => {
     e.classList.remove('active');
