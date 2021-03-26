@@ -243,6 +243,7 @@ nav a:hover {
   margin-top: 20vh;
   height: auto;
   width: 100%;
+  min-height: 100vh;
 }
 
 .trailer h2 {
@@ -738,6 +739,9 @@ footer .footer-image span {
 .background-img {
   width: 100%;
   height: auto;
+  min-height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .background-img-wrapper {
@@ -748,8 +752,9 @@ footer .footer-image span {
   position: absolute;
   width: 30vw;
   max-width: 20rem;
+  min-width: 10rem;
   height: auto;
-  bottom: 0.5%;
+  bottom: 0%;
   left: 0;
 }
 
@@ -757,6 +762,7 @@ footer .footer-image span {
   position: absolute;
   width: 30vw;
   max-width: 30rem;
+  min-width: 10rem;
   height: auto;
   right: 0;
   bottom: 10%;
@@ -775,6 +781,74 @@ footer .footer-image span {
 
 .tickets td {
   padding: 1rem 2rem;
+}
+
+.shopify-buy__product {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 30vh;
+  width: auto;
+  max-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 95%;
+}
+
+.shopify-buy__product__title {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopify-buy__product__price,
+.shopify-buy__product__title,
+.shopify-buy__btn-and-quantity {
+  margin: 0 !important;
+}
+
+.shopify-buy__product__actual-price {
+  margin-right: 4rem !important;
+}
+
+@media (max-width: 800px) {
+  .shopify-buy__product__title {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 10rem;
+            flex: 1 1 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .shopify-buy__product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 15rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 5rem;
+    margin-top: 15vh;
+  }
+  .shopify-buy__product__title {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #fabrikanten {
@@ -846,6 +920,8 @@ footer .footer-image span {
   max-width: 3000rem;
   margin-left: auto;
   margin-right: auto;
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 .person {

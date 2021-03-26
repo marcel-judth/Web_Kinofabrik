@@ -433,6 +433,7 @@
             } else {
               loadScript();
             }
+
             function loadScript() {
               var script = document.createElement('script');
               script.async = true;
@@ -622,7 +623,8 @@
                 });
               });
             }
-          })();
+          }
+          )()
           /*]]>*/
         </script>
 
@@ -724,6 +726,20 @@
         outerContent.scrollLeft(
           (innerContent.width() - outerContent.width()) / 2
         );
+
+
+        $('#collection-component-1616230435336').bind("DOMNodeInserted ",function(){
+          // alert("child is appended");
+          setTimeout(() => {
+            const frame = document.querySelector("iframe");
+          let link = document.createElement("link");
+          link.href = "./styles/styles.css";      /**** your CSS file ****/ 
+          link.rel = "stylesheet"; 
+          link.type = "text/css"; 
+          frame.contentDocument.head.appendChild(link);
+          }, 1500);
+          
+      });
       });
     </script>
   </body>
