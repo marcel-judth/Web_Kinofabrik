@@ -54,11 +54,21 @@
   justify-content: center;
   align-items: flex-start;
   margin-left: 4rem;
-  input {
+  input,
+  select {
     width: 30vw;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
+  }
+
+  select {
+    background: white;
+    border: none;
+  }
+
+  option {
+    padding: 1rem 1rem;
   }
 
   textarea {
