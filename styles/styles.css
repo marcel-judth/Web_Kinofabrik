@@ -938,42 +938,25 @@ footer .footer-image span {
   position: absolute;
   bottom: 0;
   width: auto;
-  height: 80%;
+  height: 100%;
   opacity: 0;
   cursor: pointer;
 }
 
 .person1 {
-  left: 6.2%;
+  left: 0%;
 }
 
 .person2 {
-  left: 16.3%;
+  left: 27%;
 }
 
 .person3 {
-  left: 24.4%;
-  height: 84%;
+  left: 42.6%;
 }
 
 .person4 {
-  left: 39.2%;
-  height: 89%;
-}
-
-.person5 {
-  left: 50.8%;
-  height: 89%;
-}
-
-.person6 {
-  right: 17%;
-  height: 80%;
-}
-
-.person7 {
-  right: 5%;
-  height: 75%;
+  left: 68%;
 }
 
 .person.active {
@@ -1058,19 +1041,43 @@ footer .footer-image span {
 }
 
 .person1-text {
-  left: 20%;
+  left: 30%;
 }
 
 .person2-text {
-  left: 25%;
+  left: 40%;
 }
 
 .person3-text {
-  left: 35%;
+  right: 40%;
+  left: unset;
+}
+
+.person3-text .person-text {
+  text-align: right;
+  margin-left: auto;
+  padding-right: 1.5rem;
+}
+
+.person3-text .border-bottom {
+  right: 0;
+  left: unset;
 }
 
 .person4-text {
-  left: 42%;
+  right: 32%;
+  left: unset;
+}
+
+.person4-text .person-text {
+  text-align: right;
+  margin-left: auto;
+  padding-right: 1.5rem;
+}
+
+.person4-text .border-bottom {
+  right: 0;
+  left: unset;
 }
 
 .person5-text {
