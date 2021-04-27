@@ -15,15 +15,15 @@ links.forEach((link) => {
   });
 });
 
-VisSense.VisMon.Builder(VisSense(myVideo))
-  .on('fullyvisible', function () {
-    myVideo.play();
-  })
-  .on('hidden', function () {
-    myVideo.pause();
-  })
-  .build()
-  .start();
+// VisSense.VisMon.Builder(VisSense(myVideo))
+//   .on('fullyvisible', function () {
+//     myVideo.play();
+//   })
+//   .on('hidden', function () {
+//     myVideo.pause();
+//   })
+//   .build()
+//   .start();
 
 function onPersonSelect(e) {
   const persons = document.querySelectorAll('.person');
