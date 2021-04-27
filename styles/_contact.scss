@@ -65,6 +65,7 @@
   select {
     background: white;
     border: none;
+    width: 100%;
   }
 
   option {
@@ -155,6 +156,12 @@ footer {
 
     .footer-image {
       margin-top: 2rem;
+    }
+
+    .footer-links {
+      a {
+        font-size: 1rem;
+      }
     }
   }
 

@@ -1,0 +1,49 @@
+.thank-you {
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: auto;
+    width: 20vw;
+    margin: 0rem auto;
+  }
+
+  button {
+    background: #930f1b;
+    color: white;
+    border-radius: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.thank-you-wrapper {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  h1 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}

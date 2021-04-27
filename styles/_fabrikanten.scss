@@ -34,7 +34,7 @@
 }
 
 .fab-background {
-  background: url("../img/Hintergrund_Fabrikarbeiter.png") no-repeat center top;
+  background: url('../img/Hintergrund_Fabrikarbeiter.png') no-repeat center top;
   background-size: cover;
   height: 75vh;
   display: flex;
@@ -53,11 +53,6 @@
 .person-img-cutter {
   height: 10vh;
 }
-
-// .team-wrapper{
-//   max-width: 100vw;
-//   overflow-x: auto;
-// }
 
 .img-team {
   // position: absolute;
@@ -85,19 +80,15 @@
 }
 
 .person1 {
-  left: 0%;
+  left: 15.8%;
 }
 
 .person2 {
-  left: 27%;
+  left: 37%;
 }
 
 .person3 {
-  left: 42.6%;
-}
-
-.person4 {
-  left: 68%;
+  left: 59%;
 }
 
 .person.active {
@@ -178,14 +169,15 @@
 }
 
 .person1-text {
-  left: 30%;
+  left: 35%;
 }
 
 .person2-text {
-  left: 40%;
+  left: 45%;
 }
+
 .person3-text {
-  right: 40%;
+  right: 35%;
   left: unset;
   .person-text {
     text-align: right;

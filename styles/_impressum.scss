@@ -1,0 +1,66 @@
+.Impressum {
+  padding: 5rem 10rem;
+  h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .impressum-heading-underline {
+    height: 0.2rem;
+    background: white;
+    width: 90%;
+    margin: 1rem 0rem;
+  }
+  img {
+    height: auto;
+    width: 10vw;
+    min-width: 10rem;
+    display: block;
+    margin: 0rem auto;
+  }
+
+  button {
+    background: #930f1b;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 0.8rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+.impressum-text {
+  h4 {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p,
+  a {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .Impressum {
+    padding: 1rem 2.5rem;
+  }
+}

@@ -1,5 +1,6 @@
 #veranstaltungen {
   margin-top: 10rem;
+  min-height: 100vh;
 }
 
 .background-img {
@@ -18,7 +19,7 @@
     max-width: 20rem;
     min-width: 10rem;
     height: auto;
-    bottom: 0%;
+    bottom: 1%;
     left: 0;
   }
 
@@ -31,6 +32,23 @@
     right: 0;
     bottom: 10%;
     transform: translateY(50%);
+  }
+}
+
+.tickets-text {
+  width: 80%;
+  margin: 0rem auto;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  p {
+    text-align: justify;
+    max-width: 45rem;
+    font-size: 1.2rem;
+    border: 3px solid white;
+    padding: 2rem;
   }
 }
 
@@ -77,6 +95,12 @@
 @media (max-width: 800px) {
   .shopify-buy__product__title {
     flex: 1 1 10rem;
+  }
+
+  .tickets-text {
+    p {
+      font-size: 0.9rem;
+    }
   }
 }
 

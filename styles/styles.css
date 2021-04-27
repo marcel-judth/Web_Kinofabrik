@@ -283,9 +283,9 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -589,6 +589,7 @@ nav a:hover {
 .contact-form select {
   background: white;
   border: none;
+  width: 100%;
 }
 
 .contact-form option {
@@ -702,6 +703,9 @@ footer .footer-image span {
   footer .footer-image {
     margin-top: 2rem;
   }
+  footer .footer-links a {
+    font-size: 1rem;
+  }
   .contact-wrapper {
     display: block;
   }
@@ -744,6 +748,7 @@ footer .footer-image span {
 
 #veranstaltungen {
   margin-top: 10rem;
+  min-height: 100vh;
 }
 
 .background-img {
@@ -764,7 +769,7 @@ footer .footer-image span {
   max-width: 20rem;
   min-width: 10rem;
   height: auto;
-  bottom: 0%;
+  bottom: 1%;
   left: 0;
 }
 
@@ -778,6 +783,30 @@ footer .footer-image span {
   bottom: 10%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+}
+
+.tickets-text {
+  width: 80%;
+  margin: 0rem auto;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.tickets-text p {
+  text-align: justify;
+  max-width: 45rem;
+  font-size: 1.2rem;
+  border: 3px solid white;
+  padding: 2rem;
 }
 
 .tickets {
@@ -835,6 +864,9 @@ footer .footer-image span {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 10rem;
             flex: 1 1 10rem;
+  }
+  .tickets-text p {
+    font-size: 0.9rem;
   }
 }
 
@@ -944,19 +976,15 @@ footer .footer-image span {
 }
 
 .person1 {
-  left: 0%;
+  left: 15.8%;
 }
 
 .person2 {
-  left: 27%;
+  left: 37%;
 }
 
 .person3 {
-  left: 42.6%;
-}
-
-.person4 {
-  left: 68%;
+  left: 59%;
 }
 
 .person.active {
@@ -1041,15 +1069,15 @@ footer .footer-image span {
 }
 
 .person1-text {
-  left: 30%;
+  left: 35%;
 }
 
 .person2-text {
-  left: 40%;
+  left: 45%;
 }
 
 .person3-text {
-  right: 40%;
+  right: 35%;
   left: unset;
 }
 
@@ -1201,6 +1229,229 @@ footer .footer-image span {
   }
   to {
     height: 100%;
+  }
+}
+
+.thank-you {
+  height: 100vh;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thank-you img {
+  height: auto;
+  width: 20vw;
+  margin: 0rem auto;
+}
+
+.thank-you button {
+  background: #930f1b;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.thank-you button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.thank-you-wrapper {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 4rem;
+}
+
+.thank-you-wrapper h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.thank-you-wrapper p {
+  font-size: 1.5rem;
+}
+
+.Impressum {
+  padding: 5rem 10rem;
+}
+
+.Impressum h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.Impressum .impressum-heading-underline {
+  height: 0.2rem;
+  background: white;
+  width: 90%;
+  margin: 1rem 0rem;
+}
+
+.Impressum img {
+  height: auto;
+  width: 10vw;
+  min-width: 10rem;
+  display: block;
+  margin: 0rem auto;
+}
+
+.Impressum button {
+  background: #930f1b;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.Impressum button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.impressum-text h4 {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.impressum-text p,
+.impressum-text a {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.impressum-text a {
+  text-decoration: underline;
+}
+
+.impressum-text a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .Impressum {
+    padding: 1rem 2.5rem;
+  }
+}
+
+.dsgvo {
+  padding: 5rem 10rem;
+}
+
+.dsgvo h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.dsgvo .dsgvo-heading-underline {
+  height: 0.2rem;
+  background: white;
+  width: 90%;
+  margin: 1rem 0rem;
+}
+
+.dsgvo img {
+  height: auto;
+  width: 10vw;
+  min-width: 10rem;
+  display: block;
+  margin: 0rem auto;
+}
+
+.dsgvo button {
+  background: #930f1b;
+  margin-top: 1rem;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.dsgvo button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.dsgvo-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  margin: 1rem 0rem;
+}
+
+.dsgvo-text h4 {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.dsgvo-text p,
+.dsgvo-text a {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.dsgvo-text a {
+  text-decoration: underline;
+}
+
+.dsgvo-text a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .Impressum {
+    padding: 1rem 2.5rem;
   }
 }
 
