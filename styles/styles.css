@@ -926,6 +926,14 @@ footer .footer-image span {
   margin: 0rem auto;
 }
 
+.image-wrapper img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
 .fab-background {
   background: url("../img/Hintergrund_Fabrikarbeiter.png") no-repeat center top;
   background-size: cover;
