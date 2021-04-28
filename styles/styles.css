@@ -509,6 +509,14 @@ nav a:hover {
   margin-top: 20vh;
 }
 
+.contact-background {
+  position: absolute;
+  width: 80%;
+  max-width: 80rem;
+  height: auto;
+  opacity: 0.2;
+}
+
 .contact-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
