@@ -98,15 +98,6 @@ nav a:hover {
   transition: all 0.5s ease;
 }
 
-.nav-open {
-  -webkit-transform: translateX(-140%);
-          transform: translateX(-140%);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
 .toggle .line1 {
   -webkit-transform: rotateZ(45deg) translateY(480%);
           transform: rotateZ(45deg) translateY(480%);
@@ -172,6 +163,14 @@ nav a:hover {
   }
   .burger {
     display: block;
+  }
+  .nav-open {
+    -webkit-transform: translateX(-140%);
+            transform: translateX(-140%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 }
 
@@ -701,9 +700,6 @@ footer .footer-image span {
   footer {
     width: 100%;
     margin-top: 4rem;
-  }
-  footer .footer-image {
-    margin-top: 2rem;
   }
   footer .footer-links a {
     font-size: 1rem;
