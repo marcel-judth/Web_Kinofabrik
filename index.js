@@ -3,6 +3,11 @@ const burger = document.querySelector('.burger');
 const links = nav.querySelectorAll('a');
 const myVideo = document.getElementById('trailerVideo');
 
+const consentAccepted = localStorage.getItem('jdc_consent');
+
+if (!consentAccepted)
+  document.querySelector('.cookie-pop-up').style.display = 'flex';
+
 burger.addEventListener('click', () => {
   nav.classList.toggle('nav-open');
   burger.classList.toggle('toggle');
@@ -52,6 +57,13 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+function onCookiesAccept() {
+  localStorage.setItem('jdc_consent', true);
+  const popup = document.querySelector('.cookie-pop-up');
+  popup.style.opacity = '0';
+  popup.style.pointerEvents = 'none';
+}
 
 //select
 

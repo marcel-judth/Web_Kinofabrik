@@ -515,6 +515,7 @@ nav a:hover {
   max-width: 80rem;
   height: auto;
   opacity: 0.2;
+  pointer-events: none;
 }
 
 .contact-wrapper {
@@ -781,7 +782,7 @@ footer .footer-image span {
   max-width: 20rem;
   min-width: 10rem;
   height: auto;
-  bottom: 1%;
+  bottom: 0.5%;
   left: 0;
 }
 
@@ -1330,6 +1331,10 @@ footer .footer-image span {
   font-size: 1.5rem;
 }
 
+.thanks-button {
+  margin-top: 2rem;
+}
+
 .Impressum {
   padding: 5rem 10rem;
 }
@@ -1446,6 +1451,10 @@ footer .footer-image span {
           transform: scale(1.1);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.dsgvo-button {
+  margin-bottom: 2rem;
 }
 
 .dsgvo-text h2 {
@@ -1592,5 +1601,61 @@ h3 {
 
 h4 {
   color: white;
+}
+
+.cookie-pop-up {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  min-height: 8vh;
+  height: auto;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  padding: 1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cookie-pop-up p {
+  color: white;
+  font-size: 0.9rem;
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 30rem;
+          flex: 3 1 30rem;
+}
+
+.cookie-pop-up button {
+  padding: 1rem 2rem;
+  margin-left: 5rem;
+  background: #930f1b;
+  border: none;
+  color: white;
+  font-family: 'montserrat', sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.cookie-pop-up button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 800px) {
+  .cookie-pop-up button {
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+    white-space: nowrap;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
