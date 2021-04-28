@@ -1471,12 +1471,6 @@ footer .footer-image span {
     padding: 1rem 2.5rem;
     max-width: 100vw;
   }
-  .dsgvo-text {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 /* The container must be positioned relative: */
