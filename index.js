@@ -151,4 +151,12 @@ function closeAllSelect(elmnt) {
 
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
-document.addEventListener('click', closeAllSelect);
+// document.addEventListener('click', closeAllSelect);
+
+// const form = document.querySelector('#form-contact');
+
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   form.action = 'https://formsubmit.co/kontakt@kinofabrik.at';
+//   form.submit();
+// });
