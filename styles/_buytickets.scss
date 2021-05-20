@@ -67,19 +67,19 @@
 .shopify-buy__product {
   margin-left: auto !important;
   margin-right: auto !important;
-  margin-top: 30vh;
+  margin-top: 10rem;
   width: auto;
-  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 95%;
+  max-width: 90%;
 }
 
 .shopify-buy__product__title {
   width: 30vw;
   display: flex;
+  max-width: 25rem;
 }
 
 .shopify-buy__product__price,
@@ -88,8 +88,15 @@
   margin: 0 !important;
 }
 
-.shopify-buy__product__actual-price {
-  margin-right: 4rem !important;
+.shopify-buy__product__variant-selectors {
+  max-width: 180px !important;
+  // margin-right: 2rem !important;
+  margin: 1rem;
+}
+
+.shopify-buy__product__price,
+.shopify-buy__btn-and-quantity {
+  margin: 1rem;
 }
 
 @media (max-width: 800px) {
