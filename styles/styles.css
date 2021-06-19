@@ -866,10 +866,15 @@ footer .footer-image span {
   max-width: 25rem;
 }
 
-.shopify-buy__product__price,
-.shopify-buy__product__title,
-.shopify-buy__btn-and-quantity {
+.quantity-no-margin {
   margin: 0 !important;
+}
+
+.quantity-margin {
+  margin-left: 4rem !important;
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .shopify-buy__product__variant-selectors {
@@ -887,6 +892,10 @@ footer .footer-image span {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 10rem;
             flex: 1 1 10rem;
+  }
+  .quantity-margin {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
   }
   .tickets-text p {
     font-size: 0.9rem;

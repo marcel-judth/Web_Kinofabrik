@@ -592,18 +592,55 @@
 
 
         $('#collection-component-1621517435999').bind("DOMNodeInserted ",function(){
-          // alert("child is appended");
           setTimeout(() => {
             const frame = document.querySelector("iframe");
           let link = document.createElement("link");
-          link.href = "./styles/styles.css";      /**** your CSS file ****/ 
+          link.href = "./styles/styles.css";      
           link.rel = "stylesheet"; 
           link.type = "text/css"; 
           frame.contentDocument.head.appendChild(link);
+
+          //setting the text to ausverkauft
+              const buttons = frame.contentWindow.document.querySelectorAll('.shopify-buy__beside-quantity');
+              buttons.forEach((button) => {
+                if(button.innerHTML === 'Out of stock')
+                  button.innerHTML = 'Ausverkauft!';
+              });
+
+          //setting margin of product
+          const products = frame.contentWindow.document.querySelectorAll('.shopify-buy__product');
+          products.forEach((product) => {
+            if(product.childElementCount == 3){
+              product.childNodes.forEach((element) => {
+                console.log(element.className);
+                if(element.className === 'shopify-buy__btn-and-quantity')
+                  element.classList.add('quantity-margin');
+                else
+                    element.classList.add('quantity-no-margin');
+              });
+            }else{
+              product.childNodes.forEach((element) => {
+                if(element.className != 'shopify-buy__product__variant-selectors')
+                  element.classList.add('quantity-no-margin');
+              });
+            }
+            addNewStyle('.quantity-margin { margin: 1rem 1rem 1rem 1rem !important;}');
+          });
           }, 1500);
           
       });
       });
+
+      function addNewStyle(newStyle) {
+          var styleElement = document.getElementById('styles_js');
+          if (!styleElement) {
+              styleElement = document.createElement('style');
+              styleElement.type = 'text/css';
+              styleElement.id = 'styles_js';
+              document.getElementsByTagName('head')[0].appendChild(styleElement);
+          }
+          styleElement.appendChild(document.createTextNode(newStyle));
+      }
     </script>
   </body>
 </html>
